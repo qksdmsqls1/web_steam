@@ -115,12 +115,15 @@
 }
 
 .login-btn {
+    width: 100%;
+    padding: 10px;
     background-color: #555;
-    color: white;
     border: none;
-    padding: 5px 10px;
     border-radius: 5px;
+    color: white;
+    font-size: 16px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .login-btn:hover {
@@ -129,7 +132,7 @@
 
 /* Login Section */
 .login-container {
-    margin: 150px auto 0 auto; /* 상단에 여백 추가, 중앙 정렬 */
+    margin: 250px auto 0 auto; /* 상단에 여백 추가, 중앙 정렬 */
     max-width: 400px;
     background-color: #222;
     padding: 20px;
@@ -169,6 +172,19 @@
 
 .login-btn:hover {
     background-color: #777;
+}
+
+.login-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.login-description {
+    font-size: 12px;
+    color: #bbb;
+    margin-top: 20px;
+    line-height: 1.5;
 }
 
 .steam-login-btn {
@@ -214,50 +230,6 @@
 }
 
 /* Footer */
-.footer-container {
-    background-color: #222;
-    color: #bbb;
-    padding: 20px;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    margin-top: 30px;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-left, .footer-right {
-    margin: 10px;
-}
-
-.footer-left h4, .footer-right h4 {
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-.footer-left ul, .footer-right ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-left li, .footer-right li {
-    margin-bottom: 5px;
-}
-
-.footer-logo {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.footer-logo img {
-    width: 100px;
-}
 
 /* Body */
 body {
