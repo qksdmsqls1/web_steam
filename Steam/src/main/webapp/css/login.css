@@ -1,0 +1,255 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar container */
+.navbar {
+    position: fixed; /* 상단에 고정 */
+    top: 0; /* 화면의 최상단에 배치 */
+    left: 0; /* 화면의 왼쪽 끝에 고정 */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Dark background */
+    color: white;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    z-index: 10; /* 푸터나 다른 요소들보다 위에 있게 하기 위해 */
+}
+
+/* Left section */
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Center search bar */
+.navbar-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 검색 컨테이너 */
+.search-container {
+    position: relative;
+    width: 60%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* 검색 입력창 */
+.search-bar {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+/* 검색 버튼 */
+.search-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* 검색 버튼 이미지 */
+.search-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Right section */
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.icon-img {
+    width: 35px;
+    height: 35px;
+}
+.bookmark {
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.bookmark-img {
+    width: 50px;
+    height: 50px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #555;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background-color: #777;
+}
+
+/* Login Section */
+.login-container {
+    margin: 250px auto 0 auto; /* 상단에 여백 추가, 중앙 정렬 */
+    max-width: 400px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Input fields */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.input-field::placeholder {
+    color: #aaa;
+}
+
+/* Buttons */
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #555;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background-color: #777;
+}
+
+.login-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.login-description {
+    font-size: 12px;
+    color: #bbb;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.steam-login-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #0047AB;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.steam-login-btn:hover {
+    background-color: #005bbb;
+}
+
+.steam-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Form options */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.option-link {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.option-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+
+/* Body */
+body {
+    background: linear-gradient(to bottom, #272727 70%, #ffffff);
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    color: white;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer {
+    margin-top: auto;
+    width: 100%;
+}
+.error-message {
+	color : #FF0000 !important;
+    font-size: 0.6em;
+    font : bold;
+    margin-bottom: 10px;
+    text-align: left; 
+}
