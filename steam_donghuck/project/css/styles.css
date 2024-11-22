@@ -413,23 +413,5 @@
     text-align: center;
 }
 
-.game-highlight-video-section {
-    text-align: center; /* 섹션 제목과 비디오를 중앙 정렬 */
-    margin-bottom: 30px; /* 아래쪽 여백 추가 */
-}
-
-.video-container {
-    max-width: 800px; /* 비디오의 최대 너비 */
-    margin: 0 auto; /* 수평 중앙 정렬 */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* 비디오 주변 그림자 추가 */
-    border-radius: 8px; /* 비디오의 모서리를 둥글게 */
-    overflow: hidden; /* 둥근 모서리 밖의 비디오 부분을 숨김 */
-}
-
-video {
-    width: 100%; /* 비디오 너비를 부모 컨테이너에 맞춤 */
-    height: auto; /* 비율에 맞게 높이를 자동 조정 */
-    display: block; /* 인라인 여백 제거를 위해 블록 요소로 설정 */
-}
 
 

@@ -22,6 +22,7 @@ header.navbar {
     z-index: 100; /* navbar보다 낮게 설정 */
     padding: 15px 0;
     text-align: center;
+    
 }
 
 .secondary-menu a {

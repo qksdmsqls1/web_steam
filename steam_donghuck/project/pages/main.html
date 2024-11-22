@@ -38,7 +38,7 @@
     <nav class="secondary-menu">
         <ul>
             <li><a href="#">Community</a></li>
-            <li><a href="#">AI_choice</a></li>
+            <li><a href="../pages/AI_choice.html">AI_choice</a></li> 
             <li><a href="#">Sale games</a></li>
             <li><a href="#">Library</a></li>
         </ul>
@@ -296,7 +296,11 @@
 
     <!-- Footer (Dynamic Load) -->
     <div id="footer"></div>
-
+    <style>
+        .logo {
+            cursor: pointer; /* 클릭 가능한 손 모양 커서를 표시 */
+        }
+    </style>
     <script>
         // footer.html 파일을 동적으로 로드
         fetch('../pages/footer.html')
@@ -311,6 +315,14 @@
             if (loginButton) {
                 loginButton.addEventListener('click', () => {
                     window.location.href = '../pages/login.html'; // 로그인 페이지로 이동
+                });
+            }
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+            const mainLink = document.querySelector('.logo'); // 텍스트를 감싼 클래스 선택
+            if (mainLink) {
+                mainLink.addEventListener('click', () => {
+                    window.location.href = '../pages/main.html'; // 메인 페이지로 이동
                 });
             }
         });
