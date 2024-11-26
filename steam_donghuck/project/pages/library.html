@@ -26,7 +26,7 @@
             </div>
         </div>        
         <div class="navbar-right">
-            <button class="bookmark">
+            <button class="bookmark" onclick="location.href='../pages/bookmark.html'">
                 <img src="../images/bookmark.png" alt="bookmark" class="bookmark-img">
             </button>
             <button class="icon">
@@ -38,27 +38,38 @@
     
     <nav class="secondary-menu">
         <ul>
-            <li><a href="#">Community</a></li>
+            <li><a href="../pages/coummnity.html">Coummnity</a></li> 
             <li><a href="../pages/AI_choice.html">AI_choice</a></li> 
-            <li><a href="#">Sale games</a></li>
+            <li><a href="../pages/sale.html">Sale games</a></li> 
             <li><a href="../pages/library.html">Library</a></li>
         </ul>
     </nav>
 
     <main>
 
-        <section class="failure-container">
-            <div class="failure-header">
-                <img src="../images/game.png" alt="Question Mark" class="failure-icon">
-                <h3>'비회원'님의 라이브러리</h3>
-                <p>Steam 계정이 있으신가요? AI가 추천하는 최적 게임을 불러보세요!</p>
+        <section class="library-container">
+            <!-- 프로필과 설명 -->
+            <div class="library-header">
+                <img src="../images/game.png" alt="프로필 이미지" class="profile-img">
+                <div class="library-info">
+                    <h3>'비회원'님의 라이브러리</h3>
+                    <div class="card">
+                        <p>Steam 계정이 없으신가요? <br>ASG 회원가입을 통해 게임들을 둘러보세요!</p>
+                    </div>
+                </div>
+                <div class="library-status">
+                    <span>Steam 라이브러리 연동 실패</span>
+                </div>
             </div>
-            <div class="failure-message">
+            
+            <!-- 중앙 메시지 -->
+            <div class="library-content">
                 <h1>nothing</h1>
                 <p>라이브러리 불러오기에 실패했습니다</p>
-                <button class="login-btn-large">로그인/회원가입</button>
+                <button class="login-btn-large" onclick="location.href='login.html'">로그인/회원가입</button>
             </div>
         </section>
+            
 
     </main>
     </body>

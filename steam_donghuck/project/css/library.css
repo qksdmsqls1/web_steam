@@ -1,56 +1,56 @@
-/* 실패 섹션 스타일 */
-.failure-container {
+/* 라이브러리 컨테이너 */
+.library-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 150px); /* 상단바를 제외한 화면 전체 높이 */
-    background: linear-gradient(to bottom, #272727 70%, #1c1c1c); /* 어두운 그라데이션 배경 */
-    color: white;
-    font-family: Arial, sans-serif;
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
+    min-height: 100vh; /* 화면보다 더 큰 높이 설정 */
 }
 
-/* 실패 섹션 헤더 */
-.failure-header {
-    margin-bottom: 20px;
+/* 프로필 및 설명 */
+.library-header {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* 프로필과 텍스트 간격 */
+    margin-bottom: 30px;
+    margin-top: 60px;
 }
 
-.failure-header h3 {
+.profile-img {
+    width: 100px; /* 프로필 이미지 크기 */
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%; /* 원형으로 만들기 */
+}
+
+.library-info h3 {
     font-size: 24px;
-    color: #fff;
-    margin: 10px 0;
+    margin: 0 0 10px;
+    text-align: left; /* 왼쪽 정렬 */
 }
-
-.failure-header p {
+.library-info p {
     font-size: 16px;
     color: #aaa;
-    margin: 5px 0;
 }
 
-.failure-icon {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 10px;
-}
-
-/* 실패 메시지 */
-.failure-message h1 {
+/* 라이브러리 내용 */
+.library-content h1 {
     font-size: 50px;
-    color: #A1CD44; /* 강조된 텍스트 */
     margin: 20px 0;
+    color: #A1CD44;
 }
 
-.failure-message p {
-    font-size: 16px;
-    color: #aaa;
+.library-content p {
+    font-size: 25px; /* 텍스트 크기 키움 */
+    font-weight: bold; /* 텍스트 굵게 */
+    color: white;
     margin-bottom: 20px;
 }
 
 /* 로그인 버튼 */
 .login-btn-large {
-    background-color: #1b75e9; /* 파란색 배경 */
+    background-color: #1b75e9;
     color: white;
     padding: 10px 20px;
     font-size: 16px;
@@ -58,9 +58,47 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 .login-btn-large:hover {
-    background-color: #005bb5; /* 호버 시 색상 */
+    background-color: #005bb5;
+}
+.profile-img {
+    width: 150px; /* 프로필 이미지 너비 키움 */
+    height: 150px; /* 프로필 이미지 높이 키움 */
+    object-fit: cover; /* 이미지가 영역에 맞게 잘림 */
+    border-radius: 0; /* 원형 제거하여 네모 모양으로 변경 */
+    border: 2px solid #fff; /* 흰색 테두리 */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
+}   
+/* 카드 스타일 */
+.card {
+    background-color: #2e2e2e; /* 카드 배경색 */
+    padding: 15px 50px; /* 내부 여백 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+    border: 1px solid #444; /* 테두리 */
+    text-align: left; /* 카드 내용 왼쪽 정렬 */
+    margin-top: 10px; /* 위쪽 간격 */
+}
+
+/* 카드 텍스트 */
+.card p {
+    font-size: 16px;
+    color: #aaa;
+    margin: 0;
+}
+
+.library-content {
+    margin-top: 80px; /* 위쪽 여백 추가로 아래로 내림 */
+    text-align: center;
+}
+/* 라이브러리 상태 (오른쪽 위 텍스트) */
+.library-status {
+    position: absolute; /* 절대 위치 지정 */
+    top: 10px; /* 상단 여백 */
+    right: 500px; /* 오른쪽 여백 */
+    font-size: 20px; /* 텍스트 크기 */
+    color: #00aaff; /* 파란색 텍스트 */
+    font-weight: bold; /* 굵게 */
+    margin-top: 140px;
 }
