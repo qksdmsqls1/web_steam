@@ -50,12 +50,13 @@
         <section class="community-section">
             <!-- 타이틀 -->
             <div class="community-title">
-                <h1>게임 커뮤니티</h1>
-                <textarea placeholder="게임에 대한 추천 또는 비추천 의견을 남겨주세요"></textarea>
+                <h1>ASG coummnity</h1>
+                <input type="text" placeholder="제목을 입력하세요" class="title-input" style="width: 100%; background-color: #333; color: white; border: 1px solid #444; border-radius: 5px; padding: 10px; margin-bottom: 10px;">
+                <textarea placeholder="내용을 입력하세요" style="width: 100%; height: 100px; background-color: #333; color: white; border: 1px solid #444; border-radius: 5px; padding: 10px; margin-bottom: 15px; resize: none;"></textarea>
                 <div class="feedback-section">
                     <p>이 게임에 대해 어떻게 생각하세요?</p>
-                    <button class="like-button"><img src="../images/like-icon.png" alt="Like"></button>
-                    <button class="dislike-button"><img src="../images/dislike-icon.png" alt="Dislike"></button>
+                    <button class="like-button" style="background-color: red; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer;">추천</button>
+                    <button class="dislike-button" style="background-color: blue; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer;">비추천</button>
                     <button class="submit-button">등록</button>
                 </div>
             </div>
@@ -63,8 +64,7 @@
             <!-- 필터 버튼 -->
             <div class="review-filters">
                 <button class="filter-button active">최신순</button>
-                <button class="filter-button">추천순</button>
-                <button class="filter-button">비추천순</button>
+                <button class="filter-button">오래된순</button>
             </div>
             
             <!-- 의견 카드 목록 -->
@@ -85,9 +85,6 @@
                             <span class="review-type positive">추천</span>
                         </div>
                     </div>
-                    <div class="review-game-image">
-                        <img src="../images/game.png" alt="게임 이미지">
-                    </div>
                 </div>
         
                 <!-- 두 번째 의견 카드 -->
@@ -98,16 +95,13 @@
                         </div>
                         <div class="review-content">
                             <p>
-                                게임 자체는 재미있지만, 가격이 조금 비싸다고 느껴졌습니다. 적당한 가격에 구매하시는 것을 추천드려요.
+                                추천하지 않습니다. 가격이 비싸다고 느껴졌습니다. 적당한 가격에 구매를 고려하세요.
                             </p>
                         </div>
                         <div class="review-footer">
                             <span class="review-date">2023.11.25</span>
-                            <span class="review-type neutral">보통</span>
+                            <span class="review-type negative">비추천</span>
                         </div>
-                    </div>
-                    <div class="review-game-image">
-                        <img src="../images/game.png" alt="게임 이미지">
                     </div>
                 </div>
         
@@ -127,9 +121,6 @@
                             <span class="review-type negative">비추천</span>
                         </div>
                     </div>
-                    <div class="review-game-image">
-                        <img src="../images/game.png" alt="게임 이미지">
-                    </div>
                 </div>
             </div>
         
@@ -138,12 +129,9 @@
                 <button class="more-reviews-button">더보기</button>
             </div>
         </section>
-        
-        
-        
+
     </main>
     </body>
-
 
     <div id="footer"></div>
 

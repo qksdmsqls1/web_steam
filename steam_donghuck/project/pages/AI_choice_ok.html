@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Choice 분석 성공 - AI Steam Guide</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/AI_choice_ok.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header class="navbar">
+        <div class="navbar-left">
+            <button class="menu-icon">☰</button>
+            <div class="logo">AI Steam Guide</div>
+        </div>
+        <div class="navbar-center">
+            <div class="search-container">
+                <input type="text" placeholder="Search" class="search-bar">
+                <button class="search-btn">
+                    <img src="../images/search-icon.png" alt="Search Icon" class="search-icon">
+                </button>
+            </div>
+        </div>        
+        <div class="navbar-right">
+            <button class="bookmark" onclick="location.href='../pages/bookmark.html'">
+                <img src="../images/bookmark.png" alt="bookmark" class="bookmark-img">
+            </button>
+            <button class="icon" onclick="location.href='../pages/alert.html'">
+                <img src="../images/notification-icon.png" alt="Notification Icon" class="icon-img">
+            </button>             
+            <button class="login-btn">로그인/회원가입</button>
+        </div>
+    </header>
+
+    <nav class="secondary-menu">
+        <ul>
+            <li><a href="../pages/coummnity.html">Coummnity</a></li> 
+            <li><a href="../pages/AI_choice.html">AI_choice</a></li> 
+            <li><a href="../pages/sale.html">Sale games</a></li> 
+            <li><a href="../pages/library.html">Library</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="ai-choice-success">
+            <h1>AI 추천 분석이 성공적으로 완료되었습니다!</h1>
+            <p>분석 결과를 확인하려면 아래 버튼을 클릭하세요.</p>
+            <button class="result-redirect-btn" onclick="location.href='../pages/AI_choice_results.html'">결과 보기</button>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        // footer.html 파일을 동적으로 로드
+        fetch('../pages/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
