@@ -1,0 +1,133 @@
+/* 북마크 페이지 전체 스타일 */
+.bookmark-page {
+    padding: 20px 40px;
+    color: white;
+}
+
+/* 제목 스타일 */
+.bookmark-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* 컨테이너 */
+.bookmark-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* 필터 사이드바 */
+.filters-sidebar {
+    width: 200px;
+    background-color: #2c2c2c;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.filters-sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.filter-search {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+}
+
+.filter-section h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #A1CD44; /* 강조된 텍스트 */
+}
+
+.filter-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filter-section li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 0;
+    display: block;
+}
+
+.filter-section li a:hover {
+    color: #A1CD44;
+}
+
+/* 북마크 리스트 */
+.bookmark-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* 북마크 아이템 */
+.bookmark-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+
+
+}
+
+.bookmark-thumbnail {
+    width: 200px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.bookmark-info {
+    flex: 1;
+}
+
+.bookmark-game-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.bookmark-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bookmark-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #A1CD44;
+}
+
+.bookmark-steam-btn {
+    padding: 8px 15px;
+    background-color: #1b75e9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.bookmark-steam-btn:hover {
+    background-color: #005bb5;
+}
+
+.bookmark-icon img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
